@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Monessera</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="logo">MONESSERA</div>
+
+    <ul>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#brands">Brands</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+<header class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>MONESSERA</h1>
+
+        <h2>Where Nature Meets Timeless Elegance</h2>
+
+        <p>
+            Curated premium cosmetic brands for hotels,
+            wellness and hospitality.
+        </p>
+
+    </div>
+
+</header>
+
+<section class="quote">
+
+    <h2>
+
+        Luxury begins with the smallest details.
+
+    </h2>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <div class="about-left">
+
+            <h2>About</h2>
+
+            <p>
+
+                Monessera is dedicated to bringing carefully selected
+                premium natural cosmetic brands to the Hungarian market.
+
+            </p>
+
+            <p>
+
+                Every product reflects elegance,
+                sustainability and exceptional quality.
+
+            </p>
+
+        </div>
+
+        <div class="about-right">
+
+            <img src="assets/4.png" class="brand-img">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="brands" id="brands">
+
+    <div class="brand">
+
+
+        <img src="assets/gold-smoke.png" class="brand-img">
+
+        <div>
+
+            <h2>Olive Era</h2>
+
+            <p>
+                Premium Greek natural cosmetics.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="brand reverse">
+
+        <img src="assets/5.png" class="brand-img">
+        <div>
+
+            <h2>Valentina Philippa</h2>
+
+            <p>
+                Luxury amenities designed for exceptional hospitality.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>
+
+        Let's Create Something Beautiful
+
+    </h2>
+
+    <p>
+        <a href="mailto:monessera@monessera.com">monessera@monessera.com</a>
+    </p>
+
+    <p>
+        <a href="tel:+36204684208">+36 20 468 4208</a>
+    </p>
+
+    <p>
+        Berecz Zoltán
+    </p>
+
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <span>© 2026 Monessera</span>
+
+        <a href="/adatkezelesi-tajekoztato.html">
+            Adatkezelési és jogi tájékoztató
+        </a>
+    </div>
+</footer>
+
+</body>
+
+<script>
+const elements = document.querySelectorAll(".about, .brands");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+window.addEventListener("load", () => {
+    elements.forEach(el => {
+        el.classList.remove("show");
+        observer.observe(el);
+    });
+});
+</script>
+
+</html>

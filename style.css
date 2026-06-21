@@ -1,0 +1,562 @@
+:root{
+
+    --gold:#CEA23C;
+
+    --black:#0E0E0E;
+
+    --white:#ffffff;
+
+    --bg:#F7F5F2;
+
+    --text:#222;
+
+}
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:Montserrat,sans-serif;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    padding:25px 70px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:100;
+
+    background:rgba(0,0,0,.15);
+
+    backdrop-filter:blur(12px);
+
+}
+
+.logo{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:var(--gold);
+
+    font-size:34px;
+
+    letter-spacing:3px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:45px;
+
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-size:14px;
+    position:relative;
+    transition: color .35s ease;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:1px;
+    background:#CEA23C;
+    transition: width .35s ease;
+}
+
+nav a:hover{
+    color:#CEA23C;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    max-width: 100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:#0d0d0d;
+
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: url("assets/buscard.png") center / cover no-repeat;
+    opacity: .15;
+    filter: contrast(1.1) saturate(0.8);
+    transform: scale(1.08);
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+    180deg,     
+    rgba(0,0,0,.15),    
+    rgba(0,0,0,.55)
+    );
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    text-align:center;
+
+    color:white;
+
+    z-index:5;
+
+}
+
+.hero h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:var(--gold);
+
+    font-size:110px;
+
+    letter-spacing:8px;
+
+}
+
+.hero h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:48px;
+
+    margin:20px 0;
+
+    font-weight:400;
+
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#ddd;
+
+}
+
+.discover{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+    border-bottom:1px solid var(--gold);
+
+    padding-bottom:6px;
+
+}
+
+.quote{
+
+    padding:180px 20px;
+
+    text-align:center;
+
+}
+
+.quote h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.about{
+
+    padding:160px 10%;
+
+}
+
+.container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.container1 {
+    
+    gap: 90px;
+
+    align-items: flex-start;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:25px 70px;
+}
+
+.about h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:var(--gold);
+
+    margin-bottom:30px;
+
+}
+
+.about p{
+
+    line-height:2;
+
+    margin-bottom:20px;
+
+}
+
+.brands{
+
+    padding:160px 10%;
+
+}
+
+.brand{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+    margin-bottom:180px;
+
+}
+
+.about,
+.brands {
+    opacity: 0;
+    transform: translateY(80px);
+    filter: blur(4px);
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about.show,
+.brands.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.reverse img{
+
+    order:2;
+
+}
+
+.reverse div{
+
+    order:1;
+
+}
+
+.brand h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:54px;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+
+}
+
+.contact{
+
+    background:var(--black);
+
+    color:white;
+
+    text-align:center;
+
+    padding:180px 20px;
+
+    -webkit-text-size-adjust: 100%;
+
+}
+
+.contact h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:70px;
+
+    color:var(--gold);
+
+    margin-bottom:40px;
+
+}
+
+.contact p{
+
+    margin-bottom:15px;
+    color: white !important;
+
+}
+
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover{
+    color: var(--gold);
+}
+
+footer{
+
+    background:var(--black);
+
+    color:#999;
+
+    text-align:center;
+
+    padding:30px;
+
+    font-size: 14px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+footer a {
+    color:#999;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+footer a:hover {
+    color: #CEA23C;
+}
+
+.brand-img{
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.legal {
+    padding: 120px 20px 80px;
+    background: #0e0e0e;
+    color: #e6e6e6;
+}
+
+.legal .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.legal h2 {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #c9a86a; /* gold accent */
+}
+
+.legal p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-top: 10px;
+    color: #cfcfcf;
+}
+
+.legal .small {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+@media(max-width:800px){
+
+    nav{
+
+        padding:20px 30px;
+
+    }
+
+    .container1 {
+        padding: 20px 30px;
+    }
+
+    nav ul{
+
+        display:none;
+
+    }
+
+    .hero h1{
+
+        font-size:52px;
+
+    }
+
+    .hero h2{
+
+        font-size:32px;
+
+    }
+
+    .container,
+    .brand{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .reverse img,
+    .reverse div{
+
+        order:unset;
+
+    }
+
+    .quote {
+
+        padding:100px 20px;
+
+    }
+
+    .quote h2{
+
+        font-size:36px;
+
+    }
+
+    .about{
+
+        padding:100px 10%;
+
+    }
+
+    .brands{
+
+        padding:100px 10%;
+
+    }
+
+    .contact h2{
+
+        font-size:42px;
+
+    }
+
+    .brand-img{
+        max-width: 320px;
+    }
+
+}

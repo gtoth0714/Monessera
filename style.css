@@ -82,6 +82,38 @@ nav{
 
 }
 
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:45px;
+}
+
+.language-switch{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    letter-spacing:2px;
+}
+
+.language-switch a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.language-switch a.active{
+    color:var(--gold);
+}
+
+.language-switch a:hover{
+    color:var(--gold);
+}
+
+.language-switch span{
+    color:rgba(255,255,255,.4);
+}
+
 nav ul{
 
     display:flex;
@@ -388,7 +420,7 @@ nav a:hover::after{
 .contact p{
 
     margin-bottom:15px;
-    color: white !important;
+    color: white;
 
 }
 
@@ -558,12 +590,6 @@ footer a:hover {
 
         font-size:42px;
 
-    }
-
-    .contact p {
-
-        color:#CEA23C;
-        
     }
 
     .brand-img{

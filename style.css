@@ -264,6 +264,31 @@ nav a:hover::after{
 
 }
 
+.content-background{
+    position: relative;
+    overflow: hidden;
+}
+
+.content-background::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: url("assets/gorog.png")
+                center center / contain
+                repeat;
+
+    opacity: 0.2;
+
+    z-index: 0;
+}
+
+.content-background > *{
+    position: relative;
+    z-index: 1;
+}
+
 .quote{
 
     padding:180px 20px;
@@ -407,7 +432,7 @@ nav a:hover::after{
 
     color:#D8B45B;
 
-    text-align:left;
+    text-align: center;
 
     padding:180px 20px;
 
@@ -678,12 +703,6 @@ footer a:hover {
     /* IMAGES */
     .brand-img{
         max-width: 380px;
-    }
-
-    /* CONTACT */
-    .contact{
-        padding: 90px 20px;
-        text-align: left;
     }
 
     .contact h2{

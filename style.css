@@ -279,7 +279,7 @@ nav a:hover::after{
                 center center / contain
                 repeat;
 
-    opacity: 0.2;
+    opacity: 0.3;
 
     z-index: 0;
 }
@@ -629,6 +629,12 @@ footer a:hover {
     /* NAV */
     nav{
         padding: 18px 20px;
+    }
+
+    .content-background::before{
+
+        opacity: 0.4;
+
     }
 
     nav ul{

@@ -347,7 +347,13 @@ nav a:hover::after{
 
     flex-direction: column;
 
-    padding:25px 70px;
+    padding:25px;
+}
+
+.container1 a {
+        text-decoration: none;
+        color: #F7F5F2;
+
 }
 
 .about h2{

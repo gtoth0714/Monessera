@@ -132,7 +132,7 @@ nav ul{
 }
 
 nav a{
-    color:white;
+    color:#F7F5F2;
     text-decoration:none;
     letter-spacing:2px;
     font-size:14px;
@@ -175,7 +175,7 @@ nav a:hover::after{
 
     overflow:hidden;
 
-    background:#0d0d0d;
+    background:#0E0E0E;
 
 }
 
@@ -210,7 +210,7 @@ nav a:hover::after{
 
     text-align:center;
 
-    color:white;
+    color:#F7F5F2;
 
     z-index:5;
 
@@ -233,6 +233,10 @@ nav a:hover::after{
     margin:20px 0;
 
     font-weight:400;
+
+    padding-bottom: 80px;
+
+    padding-top: 20px;
 
 }
 
@@ -305,6 +309,8 @@ nav a:hover::after{
 
     margin:auto;
 
+    color: #0E0E0E;
+
 }
 
 .about{
@@ -313,16 +319,22 @@ nav a:hover::after{
 
 }
 
-.container{
+.about .container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
 
-    display:grid;
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 90px;
+    align-items: start;
+}
 
-    grid-template-columns:1fr 1fr;
-
-    gap:90px;
-
-    align-items:center;
-
+.about-founder,
+.about-credo {
+    text-align: center;
 }
 
 .container1 {
@@ -340,13 +352,22 @@ nav a:hover::after{
 
 .about h2{
 
-    font-size:60px;
+    font-size:42px;
 
     color:var(--gold);
 
-    margin-bottom:30px;
+    margin-bottom:25px;
 
+    font-weight: 400;
+
+    letter-spacing: 1px;
+}
+
+.about h3 {
+    font-size: 18px;
     font-weight: 500;
+    margin-bottom: 35px;
+    color:#0E0E0E;
 }
 
 .about p{
@@ -356,6 +377,76 @@ nav a:hover::after{
     margin-bottom:20px;
 
     font-size: 18px;
+
+}
+
+.quote {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #0E0E0E;
+}
+
+
+/* kis elegáns elválasztó */
+
+.about-credo {
+    border-left: 1px solid rgba(0,0,0,0.12);
+    padding-left: 60px;
+}
+
+
+/* kép */
+
+.about-right {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.brand-img {
+    max-width: 550px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .about {
+        padding: 70px 0;
+    }
+
+    .about .container {
+        padding: 0 25px;
+    }
+
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+
+
+    .about-credo {
+        border-left: none;
+        border-top: 1px solid rgba(0,0,0,0.12);
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+
+    .about h2 {
+        font-size: 34px;
+    }
+
+
+    .quote {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+
+    .about-right {
+        margin-top: 50px;
+    }
 
 }
 
@@ -410,7 +501,7 @@ nav a:hover::after{
 
     font-size:54px;
 
-    color:var(--gold);
+    color:#D8B45B;
 
     margin-bottom:25px;
 
@@ -517,7 +608,7 @@ footer a:hover {
 
 .legal {
     padding: 120px 20px 80px;
-    background: #0e0e0e;
+    background: #0E0E0E;
     color: #e6e6e6;
 }
 
@@ -612,7 +703,7 @@ footer a:hover {
     }
 
     .brand-img{
-        max-width: 460px;
+        max-width: 520px;
     }
 
     .reverse img{
@@ -669,7 +760,7 @@ footer a:hover {
 
     /* QUOTE */
     .quote{
-        padding: 90px 20px;
+        padding: 75px 20px;
     }
 
     .quote h2{
@@ -708,7 +799,7 @@ footer a:hover {
 
     /* IMAGES */
     .brand-img{
-        max-width: 380px;
+        max-width: 450px;
     }
 
     .contact h2{

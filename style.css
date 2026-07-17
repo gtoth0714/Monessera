@@ -415,7 +415,7 @@ nav a:hover::after{
     }
 
     .about .container {
-        padding: 0 25px;
+        padding: 0 15px;
     }
 
 
@@ -434,7 +434,7 @@ nav a:hover::after{
 
 
     .about h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
 
@@ -756,11 +756,6 @@ footer a:hover {
         font-size: 17px;
         line-height: 1.8;
         padding: 0 10px;
-    }
-
-    /* QUOTE */
-    .quote{
-        padding: 75px 20px;
     }
 
     .quote h2{

@@ -764,6 +764,10 @@ footer a:hover {
         padding: 0 10px;
     }
 
+    .quote {
+        padding:140px 20px;
+    }
+
     .quote h2{
         font-size: 34px;
         line-height: 1.4;

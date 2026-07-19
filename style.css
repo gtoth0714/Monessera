@@ -392,6 +392,9 @@ nav a:hover::after{
     line-height: 1.8;
     color: #0E0E0E;
 }
+.showcase-text h2{
+    font-size: 36px;
+}
 
 
 /* kis elegáns elválasztó */
@@ -445,8 +448,11 @@ nav a:hover::after{
 
 
     .quote1 {
-        font-size: 18px;
+        font-size: 21px;
         line-height: 1.7;
+    }
+    .showcase-text h2 {
+        font-size: 36px;
     }
 
 
@@ -676,7 +682,7 @@ footer a:hover {
         max-width:620px;
     }
 
-    .quote1 h2{
+    .quote h2{
         font-size: 52px;
     }
 
@@ -769,7 +775,7 @@ footer a:hover {
     }
 
     .quote h2{
-        font-size: 34px;
+        font-size: 45px;
         line-height: 1.4;
     }
 

@@ -824,3 +824,65 @@ footer a:hover {
         order:2;
     }
 }
+
+.brand-showcase{
+    max-width:1400px;
+    margin:120px auto;
+    padding:0 40px;
+}
+
+.showcase-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    margin-bottom:100px;
+}
+
+.showcase-row.reverse{
+    flex-direction:row-reverse;
+}
+
+.showcase-image,
+.showcase-text{
+    flex:1;
+}
+
+.showcase-image{
+    display:flex;
+}
+
+.showcase-row .showcase-image{
+    justify-content:flex-start;
+}
+
+.showcase-row.reverse .showcase-image{
+    justify-content:flex-end;
+}
+
+.brand-img{
+    max-width:620px;
+    width:100%;
+    display:block;
+}
+
+
+@media (max-width:768px){
+
+    .showcase-row,
+    .showcase-row.reverse{
+        flex-direction:column;
+        gap:40px;
+        margin-bottom:80px;
+    }
+
+    .showcase-image{
+        justify-content:center !important;
+    }
+
+    .showcase-text{
+        min-height:auto;
+        text-align:center;
+    }
+
+}

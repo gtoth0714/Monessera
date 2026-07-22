@@ -185,8 +185,14 @@ nav a:hover::after{
     inset:0;
     background: url("assets/gorog.png") center / cover no-repeat;
     opacity: .15;
-    filter: contrast(1.1) saturate(0.8);
-    transform: scale(1.08);
+    /*filter: contrast(1.1) saturate(0.8);*/
+    /*transform: scale(1.08);*/
+    z-index: 0; /*új sor*/
+}
+
+.hero > *{ /*új szekció*/
+    position: relative;
+    z-index: 1;
 }
 
 .overlay{

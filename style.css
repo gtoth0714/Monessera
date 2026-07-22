@@ -207,6 +207,7 @@ nav a:hover::after{
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
+    opacity: .1;
 }
 
 }
@@ -594,6 +595,7 @@ nav a:hover::after{
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
+    opacity: .1;
 }
 
 }

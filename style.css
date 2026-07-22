@@ -560,7 +560,7 @@ nav a:hover::after{
     position: absolute;
     inset: 0;
 
-    background-image: url("assets/greek-footer.png");
+    background-image: url("assets/gorog-dark.png");
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;

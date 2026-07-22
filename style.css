@@ -224,6 +224,8 @@ nav a:hover::after{
 
     letter-spacing:8px;
 
+    padding: 50px;
+
 }
 
 .hero h2{

@@ -202,12 +202,12 @@ nav a:hover::after{
         padding: 120px 20px;
     }
 
-    .hero::before{
-        background-image: url("assets/gorog-mobil.png");
-        background-size: cover;
-        background-position: center bottom;
-        opacity: 0.05;
-    }
+.hero::before{
+    background-image: url("assets/gorog-mobil.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
 
 }
 
@@ -589,12 +589,12 @@ nav a:hover::after{
         padding: 120px 20px;
     }
 
-    .contact::before{
-        background-image: url("assets/gorog-mobil.png");
-        background-size: cover;
-        background-position: center bottom;
-        opacity: 0.05;
-    }
+.contact::before{
+    background-image: url("assets/gorog-mobil.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
 
 }
 

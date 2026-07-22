@@ -556,22 +556,16 @@ nav a:hover::after{
 }
 
 .contact::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-
-    background-image: url("assets/gorog-dark.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 0.18;      /* 0.12-0.25 között érdemes próbálgatni */
-    pointer-events: none;
+    content:"";
+    position:absolute;
+    inset:0;
+    background: url("assets/gorog-dark.png") center / cover no-repeat;
+    opacity: .05;
 }
 
 .contact > *{
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .contact h2{

@@ -196,6 +196,21 @@ nav a:hover::after{
     z-index: 1;
 }
 
+@media (max-width:768px){
+
+    .hero{
+        padding: 120px 20px;
+    }
+
+    .hero::before{
+        background-image: url("assets/gorog-mobil.png");
+        background-size: cover;
+        background-position: center bottom;
+        opacity: 0.05;
+    }
+
+}
+
 .overlay{
 
     position:absolute;
@@ -566,6 +581,21 @@ nav a:hover::after{
 .contact > *{
     position: relative;
     z-index: 1;
+}
+
+@media (max-width:768px){
+
+    .contact{
+        padding: 120px 20px;
+    }
+
+    .contact::before{
+        background-image: url("assets/gorog-mobil.png");
+        background-size: cover;
+        background-position: center bottom;
+        opacity: 0.05;
+    }
+
 }
 
 .contact h2{

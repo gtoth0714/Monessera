@@ -952,6 +952,13 @@ footer a:hover {
 }
 
 
+.brand-showcase {
+    max-width: 1400px;
+    margin: 70px auto;
+    padding: 0 50px;
+    margin-top: 150px;
+}
+
 @media (max-width:768px){
 
     .showcase-row,
@@ -971,19 +978,11 @@ footer a:hover {
     }
 .brand-showcase {
     max-width: 1400px;
-    padding: 0 25px;
+    padding: 0 20px;
     margin-top: 50px;
 }
 
 }
-
-.brand-showcase {
-    max-width: 1400px;
-    margin: 70px auto;
-    padding: 0 50px;
-    margin-top: 150px;
-}
-
 
 .showcase-image,
 .showcase-text {

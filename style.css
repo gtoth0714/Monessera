@@ -322,6 +322,8 @@ nav a:hover::after{
 
     padding:180px 20px;
 
+    padding-bottom: 250px;
+
     text-align:center;
 
 }
@@ -597,7 +599,7 @@ nav a:hover::after{
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center bottom;
-    opacity: .1;
+    opacity: .25;
 }
 
 }
@@ -911,6 +913,7 @@ footer a:hover {
     max-width:1200px;
     margin:120px auto;
     padding:0 40px;
+    margin-top: 100px;
 }
 
 .showcase-row{
@@ -918,7 +921,7 @@ footer a:hover {
     align-items:center;
     justify-content:space-between;
     gap:80px;
-    margin-bottom:150px;
+    margin-top:250px;
 }
 
 .showcase-row.reverse{
@@ -955,7 +958,7 @@ footer a:hover {
     .showcase-row.reverse{
         flex-direction:column;
         gap:40px;
-        margin-bottom:80px;
+        margin-top:100px;
     }
 
     .showcase-image{
@@ -966,6 +969,11 @@ footer a:hover {
         min-height:auto;
         text-align:center;
     }
+.brand-showcase {
+    max-width: 1400px;
+    padding: 0 25px;
+    margin-top: 50px;
+}
 
 }
 
@@ -973,6 +981,7 @@ footer a:hover {
     max-width: 1400px;
     margin: 70px auto;
     padding: 0 50px;
+    margin-top: 150px;
 }
 
 

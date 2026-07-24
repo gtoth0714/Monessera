@@ -165,8 +165,6 @@ nav a:hover::after{
 
     min-height:100vh;
 
-    max-width: 100%;
-
     display:flex;
 
     align-items:center;
@@ -1022,4 +1020,14 @@ footer a:hover {
 
 .quote1 {
     padding:90px 20px;
+}
+
+.mobile-break{
+    display:none;
+}
+
+@media (max-width:768px){
+    .mobile-break{
+        display:inline;
+    }
 }
